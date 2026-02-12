@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>¿Quieres ser mi San Valentín Mimoshii? ❤️</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #8b0000, #d4af37);
+      color: #2b0000;
+      text-align: center;
+    }
+
+    header {
+      padding: 50px 20px 30px;
+    }
+
+    header h1 {
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: clamp(1rem, 4vw, 1.2rem);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      padding: 30px 16px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    .message {
+      background: rgba(255,255,255,0.9);
+      margin: 30px 16px;
+      padding: 28px 20px;
+      max-width: 720px;
+      border-radius: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .message h2 {
+      font-size: clamp(1.5rem, 5vw, 2rem);
+      margin-bottom: 14px;
+    }
+
+    .message p {
+      font-size: clamp(1rem, 4vw, 1.1rem);
+      line-height: 1.6;
+    }
+
+    .buttons {
+      margin: 30px 0 50px;
+    }
+
+    button {
+      font-size: 1.1rem;
+      padding: 16px 34px;
+      margin: 10px;
+      border: none;
+      border-radius: 40px;
+      cursor: pointer;
+      min-width: 220px;
+    }
+
+    .yes {
+      background: linear-gradient(135deg, #d4af37, #ff4d6d);
+      color: white;
+    }
+
+    .no {
+      background: #eee;
+      color: #555;
+      position: relative;
+    }
+
+    footer {
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 480px) {
+      button {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Para La personita que ilumina mi vida y hace que cada dia a su lado se inolvidable ✨</h1>
+    <p>Tengo algo muy importante que preguntarte…</p>
+  </header>
+
+  <section class="gallery">
+    <img src="foto1.jpg" alt="Nuestro recuerdo 1">
+    <img src="foto2.jpg" alt="Nuestro recuerdo 2">
+    <img src="foto3.jpg" alt="Nuestro recuerdo 3">
+    <img src="foto4.jpg" alt="Nuestro recuerdo 4">
+  </section>
+
+  <section class="message">
+    <h2>❤️ Moshis ❤️</h2>
+    <p>
+      Desde el primer beso hasta cada aventura vivida juntos,
+      cada risa contigo se siente como hogar.
+    </p>
+    <p>
+      No importa el lugar, mientras sea contigo.
+    </p>
+    <h2>¿Quieres ser mi San Valentín? 💕</h2>
+  </section>
+
+  <div class="buttons">
+    <button class="yes" onclick="alert('Sabía que dirías que sí 💖 Te amo');">
+      ¡obvi,shiiii! 😍
+    </button>
+    <button class="no" onmouseover="moveButton(this)">
+      No Caremoquito 🙈
+    </button>
+  </div>
+
+  <footer>
+    Hecho con mucho amor Para mi morenita preciosa ❤️
+  </footer>
+
+  <script>
+    function moveButton(btn) {
+      const x = Math.random() * 200 - 100;
+      const y = Math.random() * 200 - 100;
+      btn.style.transform = translate(${x}px, ${y}px);
+    }
+  </script>
+
+</body>
+</html>
